@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Guess Number</h2>
+<input type="button" id="play" value="Play" onclick="play()">
+
+</body>
+<script>
+    function play(){
+        let start =parseInt(prompt('Nhập số bắt đầu: '));
+        let end =parseInt(prompt('Nhập só kết thúc: '));
+        let count=0
+        let n= Math.floor(Math.random() * (start - end + 1) + start);
+        while (count < 10 ){
+            let rndnumber=parseInt(prompt('Đoán xem: '));
+            if (rndnumber === n){
+                alert('Có mỗi con wave tàu mà bạn cũng đem đi để bắn cá!!');
+                break;
+            } else {
+                if (rndnumber > n){
+                    alert('Bạn ơi đừng nghiện nữa,nhà mình còn gì đâu!!');
+                } else {
+                    alert('Bạn ơi đừng nghiện nữa,nhà mình còn gì đâu!!');
+                }
+                count=count+1;
+            }
+        }
+
+
+
+    }
+
+
+</script>
+</html>

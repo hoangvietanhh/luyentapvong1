@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sum = 0;
+    let n=1;
+    for (let i = 1; i <= 30;){
+        if (n%7==0){
+            document.write('Số chia hết cho 7= ' + n + '<br>');
+            sum = sum + n;
+            i++;
+        }
+        n++;
+    }
+    document.write('Tổng các số chia hết cho 7= '+ sum);
+</script>
+</body>
+</html>

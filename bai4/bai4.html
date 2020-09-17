@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let f0=0;
+    let f1=1;
+    let fn;
+    document.write('f1=' + f1 + '<br>');
+    for (i=2; fn%5!==0; i++){
+        fn= f0+f1;
+        document.write('f' + i + '=' + fn +'<br>');
+        f0=f1;
+        f1=fn;
+    }
+    document.write('Số đầu tiên trong dãy fibonacci chia hết cho 5 là: ' + fn);
+</script>
+</body>
+</html>

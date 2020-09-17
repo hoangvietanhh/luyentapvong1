@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let f0=0;
+    let f1=1;
+    let fn;
+    let sum=0;
+    document.write('f1=' + f1 + '<br>');
+    for (let i=2; i<=20; i++){
+        fn= f0+f1;
+        document.write('f' + i + '=' + fn +'<br>');
+        f0=f1;
+        f1=fn;
+        sum= sum + fn;
+    }
+    document.write('Tổng dãy số= ' + sum);
+</script>
+</body>
+</html>
